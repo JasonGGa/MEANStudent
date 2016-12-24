@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="error">{{ vm.message }}</div>
+    <!--utilizamos ng-repeat para mostrar todos los articulos-->
+    <div class="col-xs-12 list-group-item" ng-repeat="articulo in vm.data.articulos">
+      <!--Mostramos toda la información del articulo-->
+      <h4>{{articulo.titulo}}</h4>
+      <h6>{{articulo.fecha}}</h6>
+      <h6>{{articulo.autor}}</h6>
+      <p>{{articulo.cuerpo}}</p>
+    </div>
+  </div>
+</div>
